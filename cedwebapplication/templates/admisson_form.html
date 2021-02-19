@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Admisson</title>
+</head>
+<body bgcolor="green">
+<form action="new_admisson" method="POST">
+    {% csrf_token %}
+    <a href="/">HOME </a>
+    <br><br>
+   Student Name:<input type="text" name="student_name"><br><br>
+   Email id    :    <input type="text" name="email_id"><br><br>
+   Age         :         <input type="number" name="age"><br><br>
+
+   <input type="submit">
+</form>
+</body>
+</html>

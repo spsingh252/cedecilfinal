@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrolled Student</title>
+</head>
+<body bgcolor="yellow">
+    <a href="/"> HOME  </a>
+<br>
+<br>
+<h1> Student List </h1>
+<table>
+  <tr>
+      <th>NAME</th><th>MAIL ID</th><th>AGE</th>
+  </tr>
+{% for student in studentlist%}
+<!--<p> {{student.student_name}} </p> -->
+    <tr>
+      <th>{{student.student_name}}</th><th>{{student.email_id}}</th><th>{{student.age}}</th>
+    </tr>
+{% endfor%}
+</table>
+</body>
+</html>
